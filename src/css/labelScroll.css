@@ -1,0 +1,45 @@
+
+#labelScroll-element {
+	color: #000;
+
+	position: absolute;
+	right: 20px;
+	background: #88b7d5;
+	border: 1px solid #c2e1f5;
+	height: 20px;
+	padding-left: 15px;
+	padding-right: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#labelScroll-element:after, #labelScroll-element:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#labelScroll-element:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 10px;
+	margin-top: -10px;
+}
+#labelScroll-element:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #c2e1f5;
+	border-width: 12px;
+	margin-top: -12px;
+}
+
+.labelScroll-hidden{
+	display: none;
+}
